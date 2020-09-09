@@ -2,6 +2,13 @@
 
 ## Index
 
+- Autocomplete
+  - Desktop
+    - [01_UrbanRoad](https://github.com/findify/customization-examples/tree/master/Autocomplete/Desktop/01_Urbanroad)
+  - Mobile
+
+## Structure Example
+
 ```
 – Autocomplete
 –– Desktop
