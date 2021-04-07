@@ -35,3 +35,6 @@
   padding-top: 10px;
   padding-left: 0;
 }
+.findify-components-autocomplete--product-matches__price-wrapper span {
+  font-family: var(--font-base);
+}
