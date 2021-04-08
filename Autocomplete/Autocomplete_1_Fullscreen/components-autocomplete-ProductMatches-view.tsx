@@ -59,7 +59,12 @@ const ProductMatchesView: React.SFC<IProductMatchesProps> = ({
   <div className={styles.root}>
     <ItemsList
       wrapper={Grid}
-      // adjust the view of how many columns to display per row
+      /*
+        Adjust the view of how many columns to display per row.
+        For example:
+        -> 12/4 would display 4 products per row (meaning every column is 25% wide)
+        -> 12/1 would display 1 product per row (meaning every column is 100% wide)
+      */
       columns={String(12 / 4)}
       columnClass={theme.gridColumnClass}
       className={className}
