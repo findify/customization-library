@@ -2,6 +2,7 @@ import React from 'react';
 import { List, Map } from 'immutable';
 import { withStateHandlers, compose } from 'recompose';
 
+// create an enhancer that handles a state used below to show more colors
 const enhancer = compose(
 withStateHandlers(
   () => ({
@@ -56,10 +57,16 @@ const ColorSwatches = ({ variants, colorMapping, openList, isListOpen, setCurren
     return { colors, swatches };
   }, { swatches: List([]), colors: Map({}) });
 
+  /*
+    This container is used as a placeholder to render whenever there are no colors showing but there should be some spacing to keep the design consistent.
+  */
   if (swatches.size <= 0) {
     return <div className="findify-empty-variant-container"></div>;
   }
 
+  /*
+    This container is showing when there are less or equal to 5 color variants showing. The number can be adjusted accordingly to show more or less colors by default.
+  */
   if (swatches.size <= 5) {
     return (
       <div className="findify-variant-container-small">
@@ -68,6 +75,10 @@ const ColorSwatches = ({ variants, colorMapping, openList, isListOpen, setCurren
     );
   }
 
+  /*
+    This container is showing when there are more than 5 color variants available to include a "more" button in order to show all available color variants.
+    The number can be adjusted accordingly.
+  */
   if (swatches.size > 5) {
     const limitedSwatches = swatches.slice(0, 5)
     const toggleSwatch = isListOpen ? swatches : limitedSwatches
@@ -81,4 +92,5 @@ const ColorSwatches = ({ variants, colorMapping, openList, isListOpen, setCurren
   }
 };
 
+// add the enhancer
 export default enhancer(ColorSwatches);
