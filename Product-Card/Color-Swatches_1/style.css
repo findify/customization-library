@@ -75,6 +75,12 @@
   visibility: visible;
 }
 
+@media screen and (max-width: 767px) {
+  .findify-components--color-swatch-tooltip {
+    display: none;
+  }
+}
+
 button.findify-swatch--button {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -95,4 +101,4 @@ button.findify-swatch--button {
   position: relative;
   padding: 0;
   color: #000 !important;
-} 
+}
