@@ -1,4 +1,6 @@
-/* Desktop Autocomplete */
+/*
+  Desktop Autocomplete
+*/
 @media screen and (min-width: 768px) {
   .findify-autocomplete {
     width: 100% !important;
