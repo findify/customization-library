@@ -1,40 +1,43 @@
-/* Autocomplete */
-.findify-autocomplete {
-  width: 100% !important;
-  left: 0 !important;
+/* Desktop Autocomplete */
+@media screen and (min-width: 768px) {
+  .findify-autocomplete {
+    width: 100% !important;
+    left: 0 !important;
+  }
 }
 .findify-layouts--autocomplete--dropdown {
   width: 100%;
   left: 0 !important;
 }
-.findify-components-autocomplete--suggestion-item__icon {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--suggestion-item__icon {
   display: none;
 }
-.findify-components-autocomplete--suggestion-item__trending,
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--suggestion-item__trending,
 .findify-layouts--autocomplete--dropdown__trending-title {
   font-style: normal;
 }
-.findify-components-autocomplete--product-matches__grid-column-class:not(:last-child):after {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches__grid-column-class:not(:last-child):after {
   display: none;
 }
 .findify-layouts--autocomplete--dropdown__product-matches-container h4 {
   padding-left: 10px;
 }
-.findify-components-autocomplete--product-matches {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.findify-components-autocomplete--product-matches a {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches a {
   padding: 10px;
 }
-.findify-components-autocomplete--product-matches__product-card .findify-components-autocomplete--product-matches__imageWrap {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches__product-card .findify-components-autocomplete--product-matches__imageWrap {
   display: block;
+  width: 100%;
 }
-.findify-components-autocomplete--product-matches__product-card .findify-components-autocomplete--product-matches__content {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches__product-card .findify-components-autocomplete--product-matches__content {
   padding-top: 10px;
   padding-left: 0;
 }
-.findify-components-autocomplete--product-matches__price-wrapper span {
+.findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches__price-wrapper span {
   font-family: var(--font-base);
 }
