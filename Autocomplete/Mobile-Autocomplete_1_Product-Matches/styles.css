@@ -1,0 +1,82 @@
+/*
+  Mobile Autocomplete
+*/
+@media screen and (max-width: 767px) {
+  .findify-autocomplete {
+    height: calc(100vh - 70px) !important;
+    z-index: 6;
+  }
+}
+
+.findify-layouts--autocomplete--fullscreen__container {
+  height: calc(100vh - 70px) !important;
+  overflow-y: scroll;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--search-suggestions__list {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--suggestion-item__suggestion {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--product-matches__grid-column-class:not(:last-child):after {
+  display: none;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--product-matches__product-card .findify-components-autocomplete--product-matches__imageWrap {
+  width: 70px;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--product-matches__price-wrapper {
+  margin: 5px 0 0 !important;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--product-matches__content .findify-components--cards--product__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--suggestion-item__suggestion:hover,
+.findify-layouts--autocomplete--fullscreen__container .findify-components-autocomplete--suggestion-item__suggestion:focus {
+  background: none;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-components-common--grid__column-3 {
+  width: 100%;
+}
+
+.findify-layouts--autocomplete--fullscreen__container > .findify-components-autocomplete--product-matches {
+  border-top: 1px solid #e2e2e2;
+  margin: 0 15px;
+  padding-top: 30px;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-layouts--autocomplete--fullscreen__suggestions-title,
+.findify-layouts--autocomplete--fullscreen__container  .findify-layouts--autocomplete--fullscreen__trending-title {
+  margin-top: 20px;
+  padding: 0 15px;
+}
+
+.findify-layouts--autocomplete--fullscreen__tip {
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  background: none;
+  margin: 15px 15px 0 15px;
+}
+
+.findify-components-autocomplete--tip__tip {
+  height: unset;
+  line-height: 1.5em;
+  padding: 10px 0;
+}
+
+.findify-layouts--autocomplete--fullscreen__container .findify-layouts--autocomplete--dropdown .findify-components-autocomplete--product-matches__price-wrapper span {
+  font-family: var(--font-base);
+}
