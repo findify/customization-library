@@ -1,8 +1,3 @@
-/* DONE:
-  - price product cards + works for autocomplete product cards + rec widgets
-  - range facet filter options + input fields, breadcrumbs automatically work with filter updates it seems
-*/
-
 /*
   List of currencies
     - BRL
