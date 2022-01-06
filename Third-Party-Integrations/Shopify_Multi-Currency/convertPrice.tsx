@@ -1,7 +1,7 @@
 import React from 'react';
 
-// default_currency is the default currency that is set for your store, string that has this format: "USD", "GBP", "EUR" and so on
 const convertPrice = (price) => {
+  // default_currency is the default currency that is set for your store, string that has this format: "USD", "GBP", "EUR" and so on
   const default_currency = "USD";
 
   if(Shopify.currency.active !== default_currency){
@@ -15,4 +15,4 @@ const convertPrice = (price) => {
   return price;
 }
 
-export default convertPrice; 
+export default convertPrice;
