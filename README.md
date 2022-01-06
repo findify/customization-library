@@ -8,3 +8,6 @@
 
 - Product Card
   - [Color-Swatches_1](https://github.com/findify/customization-examples/tree/master/Product-Card/Color-Swatches_1)
+
+- Third Party Integrations
+  - [Shopify Multi-Currency](https://github.com/findify/customization-examples/tree/master/Third-Party-Integrations/Shopify_Multi-Currency)
