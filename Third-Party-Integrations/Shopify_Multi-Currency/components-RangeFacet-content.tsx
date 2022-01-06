@@ -5,6 +5,9 @@
 import unescape from 'lodash/unescape';
 import formatCurrency from 'helpers/formatCurrency';
 
+// import custom currencies
+import currency from 'currency';
+
 const identity = (i) => i;
 
 const createLabel = (from, to, config, fx) =>
@@ -22,6 +25,6 @@ export default ({ item, config }) =>
     item.get('to'),
     config,
     (item.get('name') === 'price' &&
-      formatCurrency(config.get('currency').toJS())) ||
+      formatCurrency(currency[Shopify.currency.active] || config.get('currency').toJS())) ||
       identity
   );

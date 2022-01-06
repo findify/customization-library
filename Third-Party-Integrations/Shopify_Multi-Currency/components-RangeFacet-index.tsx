@@ -19,6 +19,9 @@ import styles from 'components/RangeFacet/styles.css';
 import Loadable from 'react-loadable';
 import chunks from 'helpers/chunks';
 
+// import custom currencies
+import currency from 'currency';
+
 const Slider = Loadable({
   loader: chunks.components.rangeSlider,
   loading: () => null,
@@ -214,7 +217,8 @@ export default ({
       >
         <PriceInput
           theme={theme}
-          currency={config.getIn(['currency', 'symbol'])}
+          // make sure to update the currency symbols for the input fields
+          currency={currency[Shopify.currency.active].symbol || config.getIn(['currency', 'symbol'])}
           max={to}
           min={facet.get('min')}
           resetOn={facet}
@@ -227,7 +231,8 @@ export default ({
 
         <PriceInput
           theme={theme}
-          currency={config.getIn(['currency', 'symbol'])}
+          // make sure to update the currency symbols for the input fields
+          currency={currency[Shopify.currency.active].symbol || config.getIn(['currency', 'symbol'])}
           min={from}
           max={facet.get('max')}
           resetOn={facet}
