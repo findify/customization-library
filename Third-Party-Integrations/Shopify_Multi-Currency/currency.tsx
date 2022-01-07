@@ -13,64 +13,64 @@ export default {
   "BRL": {
     "code": "BRL",
     "symbol": "R$",
-    "thousandsSeparator": ",",
-    "decimalSeparator": ".",
+    "thousand": ",",
+    "decimal": ".",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": false,
-    "decimalDigits": 2
+    "precision": 2
   },
   "CAD": {
     "code": "CAD",
     "symbol": "$",
-    "thousandsSeparator": ",",
-    "decimalSeparator": ".",
+    "thousand": ",",
+    "decimal": ".",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": false,
-    "decimalDigits": 2
+    "precision": 2
   },
   "COP": {
     "code": "COP",
     "symbol": "$",
-    "thousandsSeparator": ",",
-    "decimalSeparator": ".",
+    "thousand": ",",
+    "decimal": ".",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": false,
-    "decimalDigits": 2
+    "precision": 2
   },
   "EUR": {
     "code": "EUR",
     "symbol": "€",
-    "thousandsSeparator": " ",
-    "decimalSeparator": ",",
+    "thousand": " ",
+    "decimal": ",",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": true,
-    "decimalDigits": 2
+    "precision": 2
   },
   "GBP": {
     "code": "GBP",
     "symbol": "£",
-    "thousandsSeparator": ",",
-    "decimalSeparator": ".",
+    "thousand": ",",
+    "decimal": ".",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": false,
-    "decimalDigits": 2
+    "precision": 2
   },
   "MXN": {
     "code": "MXN",
     "symbol": "$",
-    "thousandsSeparator": ",",
-    "decimalSeparator": ".",
+    "thousand": ",",
+    "decimal": ".",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": false,
-    "decimalDigits": 2
+    "precision": 2
   },
   "USD": {
     "code": "USD",
     "symbol": "$",
-    "thousandsSeparator": ",",
-    "decimalSeparator": ".",
+    "thousand": ",",
+    "decimal": ".",
     "symbolOnLeft": true,
     "spaceBetweenAmountAndSymbol": false,
-    "decimalDigits": 2
+    "precision": 2
   }
 }
